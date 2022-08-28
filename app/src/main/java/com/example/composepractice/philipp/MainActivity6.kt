@@ -1,4 +1,4 @@
-package com.example.composepractice
+package com.example.composepractice.philipp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

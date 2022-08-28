@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ComposePractice</string>
+    <string name="app_name">Compose</string>
+    <string name="bottom_navigation_home">Home</string>
+    <string name="bottom_navigation_profile">Profile</string>
+    <string name="align_your_body">Align Your Body</string>
+    <string name="facourite_collections">Favourite Collections</string>
 </resources>
