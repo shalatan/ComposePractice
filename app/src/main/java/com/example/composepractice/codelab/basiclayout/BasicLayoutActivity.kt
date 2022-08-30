@@ -8,9 +8,7 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.GridCells
 import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.LazyVerticalGrid
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
@@ -29,6 +27,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.composepractice.ui.theme.ComposePracticeTheme
 import com.example.composepractice.R
 
@@ -98,7 +97,7 @@ fun AlignYourBodyElement(
         )
         Text(
             text = stringResource(id = text),
-            style = MaterialTheme.typography.h5,
+            fontSize = 18.sp,
             modifier = Modifier.paddingFromBaseline(top = 24.dp, bottom = 8.dp)
         )
     }
@@ -148,7 +147,7 @@ fun FavoriteCollectionCard(
             )
             Text(
                 text = stringResource(text),
-                style = MaterialTheme.typography.h5,
+                fontSize = 18.sp,
                 modifier = Modifier.padding(horizontal = 16.dp)
             )
         }
@@ -189,11 +188,12 @@ fun HomeSectionSlot(
     Column(modifier = modifier) {
         Text(
             text = stringResource(title),
-            style = MaterialTheme.typography.h4,
+            fontSize = 24.sp,
             modifier = Modifier
                 .paddingFromBaseline(top = 40.dp, bottom = 8.dp)
                 .padding(horizontal = 16.dp)
         )
+        Spacer(modifier = Modifier.height(4.dp))
         content()
     }
 }
@@ -206,7 +206,6 @@ fun HomeScreen(modifier: Modifier = Modifier) {
     Column(
         modifier
             .verticalScroll(rememberScrollState())
-            .padding(16.dp)
     ) {
         Spacer(modifier = Modifier.height(16.dp))
         SearchBar(Modifier.padding(horizontal = 16.dp))
@@ -273,17 +272,17 @@ fun FinalApp() {
     }
 }
 
-@Preview(name = "Light Mode")
-@Preview(
-    uiMode = Configuration.UI_MODE_NIGHT_YES,
-    showBackground = true,
-    name = "Dark Mode"
-)
-@Composable
-fun DefaultPreview() {
-    ComposePracticeTheme {
-        Surface {
-            FinalApp()
-        }
-    }
-}
+//@Preview(name = "Light Mode")
+//@Preview(
+//    uiMode = Configuration.UI_MODE_NIGHT_YES,
+//    showBackground = true,
+//    name = "Dark Mode"
+//)
+//@Composable
+//fun DefaultPreview() {
+//    ComposePracticeTheme {
+//        Surface {
+//            FinalApp()
+//        }
+//    }
+//}

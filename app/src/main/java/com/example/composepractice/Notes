@@ -1,0 +1,10 @@
+- remember
+    : helps retain state across recompositions, but not configuration changes
+- rememberSaveable
+    : automatically saves any value that can be saved in Bundle
+    : use to restore UI state after an Activity or process is recreated
+- Stateful vs Stateless
+    : Stateful Composable is a composable that owns a piece of state that can change over time
+    : Stateless Composable is a composable that doesn't owns any state.
+- State Hoisting
+    : Pattern of moving state to a composable's caller to make a composable Stateless

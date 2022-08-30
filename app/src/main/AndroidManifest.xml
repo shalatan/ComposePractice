@@ -14,7 +14,7 @@
         android:theme="@style/Theme.ComposePractice"
         tools:targetApi="31">
         <activity
-            android:name=".codelab.basiclayout.BasicLayoutActivity"
+            android:name=".codelab.statedemo.StateDemoActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.ComposePractice">
